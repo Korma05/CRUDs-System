@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linke normalize-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Linke font awsem icons-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Linke Stryle-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>CRUDs System</title>
+  </head>
+  <body>
+    <div class="crud-system-card">
+      <div class="container">
+        <div class="title"><h1>CRUDs Operating System ..!</h1></div>
+        <div class="input-boxes">
+          <!-- name and category -->
+          <div class="name-and-category">
+            <div class="name">
+              <p>Prodact Name</p>
+              <span id="alertT">Pleas inter the Name</span>
+              <input type="text" />
+            </div>
+            <div class="category">
+              <p>Prodact Category</p>
+              <input type="text" />
+            </div>
+          </div>
+          <!-- price-discount-quantity -->
+          <div class="price-discount-quantity">
+            <div class="price">
+              <p>Prodact Price</p>
+              <span id="alertT">Pleas inter the price</span>
+              <input type="text" />
+            </div>
+            <div class="discount">
+              <p>Prodact Discount</p>
+              <input type="text" />
+            </div>
+            <div class="quantity">
+              <p>Prodact Quantity</p>
+              <input type="text" />
+            </div>
+          </div>
+          <!-- Description  -->
+          <div class="description">
+            <p>Prodact Description</p>
+            <textarea name="" id="area"></textarea>
+            <button id="Add">Add Product</button>
+            <button id="uppDate">UppDate Product</button>
+          </div>
+        </div>
+        <!-- Search button -->
+
+        <input
+          id="searchBtn"
+          type="search"
+          placeholder="Search by name or price"
+        />
+
+        <!-- Table -->
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Discount</th>
+              <th>Auentity</th>
+              <th>Description</th>
+              <th>UpDate</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="showData"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
